@@ -13,6 +13,8 @@ import os
 
 
 def encryptionMain(request):
+    print("encryptionMain")
+    return render(request,"enc/encIndex.html")
     return HttpResponse("This is in encryption application!")
 
 def testGet(request,num):
