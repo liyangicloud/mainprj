@@ -102,7 +102,7 @@ ENV/
 
 /.idea/
 /.DS_Store
-/allDB.sqlite3
+allDB.sqlite3
 /ForWinService/migrations/
 /encryption/migrations/
 
