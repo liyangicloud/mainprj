@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--This is a
+zhushi -->
+<html>
+<head lang="en">
+    <base href="http://127.0.0.1" />
+    <base target="{% url 'errorHome' %}" />
+    <link> </link>
+    <script></script>
+    <style></style>
+    <meta charset="UTF-8">
+    <title>测试放大镜放大this is a test!</title>
+</head>
+<body>
+    {% load staticfiles %}
+<h1>cefjdasfdas</h1>
+
+<form method="get" action="{% url "errorHome" %}">
+   <input type="text" value="please input something"/>
+   <input type="text" placeholder="please input something"/>
+   <br>
+   <br>
+   <input type="text" placeholder="please input something" maxlength="8" size="15">
+   <br>
+   <br>
+   <input type="password" placeholder="请输入密码"/>
+   <br>
+   <br>
+   <textarea rows="15" cols="35">textarea显示</textarea>
+   <br>
+   <br>
+   <input type="button" value="submit 表单">
+   <input type="submit" value="submit 表单">
+   <br>
+   <select>
+       <option>中国</option>
+       <option>日本</option>
+       <option>美国</option>
+       <option>英国</option>
+       <option>法国</option>
+   </select>
+
+   <br>
+   <input type="text" list="datalist1" size="15">
+   <datalist id="datalist1">
+       <option>中国</option>
+       <option>日本</option>
+       <option>美国</option>
+       <option>英国</option>
+       <option>法国</option>
+   </datalist>
+   <br>
+   <input type="date">
+   <br>
+   <input type="image" src="{% static 'img/little.png' %}" width="200">
+   <img src="{% static 'img/little.png' %}" height="250" width="250">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+
+
+
+</form>
+
+
+<ol type="i">
+    <li>第一行</li>
+    <ol>
+        <li>子行第一行</li>
+        <li>子行第二行</li>
+        <li>子行第三行</li>
+    </ol>
+    <li>第二行</li>
+    <li>第三行</li>
+</ol>
+<ul>
+    <li>第一行</li>
+    <li>第二行</li>
+    <li>第三行</li>
+</ul>
+
+
+
+
+
+<table border="3px" align="center">
+    <thead>
+        <tr>
+            <td>表头</td>
+            <td>表头2</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>第一g个</td>
+            <td>第二个</td>
+            <td>第三个</td>
+        </tr>
+        <tr>
+            <td>第2一ggggggggg个</td>
+            <td colspan="2">第2三个</td>
+        </tr>
+        <tr>
+            <td>第3一ggggggggg个</td>
+            <td>第3二个</td>
+            <td>第4三个</td>
+        </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+
+
+</table>
+
+
+
+
+
+<p>######</p>
+<b>粗体</b>
+<em>倾斜字体</em>
+<u>下划线</u>
+<s>中间删除线</s>
+<p>######</p>
+<a href="https://www.baidu.com" target="_self">搜索self</a>
+<p>######</p>
+<a href="https://www.baidu.com" target="_blank">搜索blank</a>
+<p>######</p>
+<a href="https://www.baidu.com" target="_top">搜索top</a>
+<p>######</p>
+
+</body>
+</html>

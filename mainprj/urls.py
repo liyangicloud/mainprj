@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
+from encryption.views import indexView,errorView
+
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
+    url(r'^$',indexView,name='prjHome'),
+    url(r'^error/$',errorView,name = 'errorHome'),
     url(r'^admin/', admin.site.urls),
     url(r'^enc/',include('encryption.urls')),
 ]
+
+urlpatterns += staticfiles_urlpatterns()

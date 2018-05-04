@@ -9,5 +9,5 @@ from encryption import views
 urlpatterns = [
     url(r'^$', views.encryptionMain),
     url(r'^get/(\d+)/$',views.testGet)
-]
 
+]

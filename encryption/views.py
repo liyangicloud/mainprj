@@ -20,3 +20,9 @@ def encryptionMain(request):
 def testGet(request,num):
     #注意，这里的参数num是一个字符串
     return HttpResponse("input number is %s"%(num))
+
+def indexView(request):
+    return render(request,"enc/main.html")
+
+def errorView(request):
+    return render(request,"enc/error.html")
